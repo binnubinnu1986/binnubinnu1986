@@ -3,60 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Dati di pagamento</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    .box {
-      background-color: white;
-      border: 1px solid #ccc;
-      padding: 20px;
-      max-width: 500px;
-      margin: auto;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    h1 {
-      text-align: center;
-    }
-    .data {
-      margin: 15px 0;
-    }
-    button {
-      margin-left: 10px;
-      padding: 6px 10px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 <body>
-  <div class="box">
-    <h1>Dati di pagamento</h1>
-
-    <div class="data">
-      <strong>IBAN:</strong> <span id="iban">LT513250027894818868</span>
-      <button onclick="copyToClipboard('iban')">Copia</button>
-    </div>
-
-    <div class="data">
-      <strong>Importo:</strong> <span id="importo">10,00 EUR</span>
-      <button onclick="copyToClipboard('importo')">Copia</button>
-    </div>
-
-    <div class="data">
-      <strong>Causale:</strong> <span id="causale">HO BISOGNO DI AIUTO</span>
-      <button onclick="copyToClipboard('causale')">Copia</button>
-    </div>
-
-    <p style="margin-top: 30px; text-align: center;">
-      Scannerizza questo link o condividilo per inviare il pagamento.
-    </p>
-  </div>
-
-  <script>
-    function copyToClipboard(id) {
-      const text = document.getElementById(id).textContent;
-      navigator.clipboard.writeText(text).then(() => {
-        alert('Testo copiato: ' + text);
+  <h1>Dati di pagamento</h1>
+  <p><strong>IBAN:</strong> LT513250027894818868</p>
+  <p><strong>Importo:</strong> 10,00 EUR</p>
+  <p><strong>Causale:</strong> HO BISOGNO DI AIUTO</p>
+</body>
+</html>
